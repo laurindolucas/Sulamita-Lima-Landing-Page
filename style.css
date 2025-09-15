@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.navBar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f6f3;
+    padding: 0 20px;
+
+    border-bottom: 1px solid rgb(235, 235, 235);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navBarContent {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.navTitle {
+    font-weight: 600;
+    font-size: 30px;
+    color: #453425;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #302520;
+    font-size: 17px;
+    margin: 10px;
+
+}
+
+#navLinkContato {
+    background-color: #453425;
+    color: #fffef9;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    background-color: #453425; 
+    color: #fff; 
+    padding: 40px 10%; 
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+
+.footerContent {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    margin-bottom: 30px;
+    gap: 50px;
+}
+
+
+.infoFooter {
+    width: 25%;
+    min-width: 200px;
+}
+
+.nomeFooter {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descriptionFooter {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.navegacaoFooter,
+.contatoFooter {
+    min-width: 180px;
+}
+
+.titleFooter {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.emailFooter, .numFooter{
+    margin-bottom: 5px;
+}
+
+.footerLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footerLink:hover {
+    color: #ddd;
+}
+
+.line {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 15px;
+}
+
+.copyFooter {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+.copyFooter a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyFooter a:hover {
+    color: #ddd;
+}

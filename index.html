@@ -5,46 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sulamita Lima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Tint&family=Fjalla+One&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nata+Sans:wght@100..900&family=Nunito:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=TikTok+Sans:opsz,wght@12..36,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <nav class="navBar">
+            <div class="navBarContent">
+                <div class="navTitle">Sulamita Lima</div>
+                <div class="navLinks">
+                    <a href="#incio" class="navLink" id="navLinkInicio">Início</a>
+                    <a href="#sobre" class="navLink" id="navLinkSobre">Sobre</a>
+                    <a href="#expertise" class="navLink" id="navLinkExpertise">Expertise</a>
+                    <a href="#palestras" class="navLink" id="navLinkPalestras">Palestras</a>
+                    <a href="#testemunhos" class="navLink" id="navLinkTestemunhos">Testemunhos</a>
+                    <a href="#contato" class="navLink" id="navLinkContato">Contato</a>
+                </div>
+            </div>
 
         </nav>
     </header>
 
     <main>
-        <section class="heroSection">
+        <section class="heroSection" id="incio">
 
         </section>
 
-        <section class="aboutSection">
+        <section class="aboutSection" id="sobre">
 
         </section>
 
-        <section class="expertsSection">
+        <section class="expertsSection" id="expertise">
 
         </section>
 
-        <section class="lecturesSection">
+        <section class="lecturesSection" id="palestras">
+
+            <section class="galerySection">
+
+            </section>
 
         </section>
 
-        <section class="testimonialsSection">
+        <section class="testimonialsSection" id="testemunhos">
 
         </section>
 
 
-        <section class="talkSection">
+
+
+        <section class="talkSection" id="contato">
+            <div class="header-talkSection">
+                <h1 class="title-talkSection">Vamos Conversar?</h1>
+                <p class="description-talkSection"></p>
+            </div>
+
+            <div class="content-talkSection">
+                <div class="formContact">
+                    <form>
+                        <div class="formInitial">
+                            <div class="formgroup">
+                                <label for="Name" class="title-label">Nome*</label>
+                                <input type="text" name="user_name" placeholder="Seu nome completo aqui"
+                                    class="form-input" required>
+                            </div>
+                            <div class="formgroup">
+                                <label for="Email" class="title-label">Email*</label>
+                                <input type="text" name="user_email" placeholder="seu@email.com" class="form-input"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="formContinue">
+                            <div class="formgroup">
+                                <label for="Name" class="title-label">Empresa/Organização</label>
+                                <input type="text" name="user_empresa" placeholder="Nome da sua empresa"
+                                    class="form-input">
+                            </div>
+                            <div class="formgroup">
+                                <label for="message" class="title-label">Nachricht:</label>
+                                <textarea name="message" id="conact-message"
+                                    placeholder="Conte-me sobre seu evento, objetivos e expectativas..."
+                                    required></textarea>
+                            </div>
+                            <button class="formButton">Enviar Solicitação</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
 
         </section>
 
     </main>
 
-    <footer>
-        
+    <footer class="footer">
+        <div class="footerContent">
+            <div class="infoFooter">
+                <h3 class="nomeFooter">Sulamita Lima</h3>
+                <p class="descriptionFooter">Transformando organizações através do desenvolvimento de lideranças
+                    femininas autênticas e impactantes.</p>
+            </div>
+            <div class="navegacaoFooter">
+                <h4 class="titleFooter">Navegação</h4>
+                <div class="footerLinks">
+                    <a href="#incio" class="footerLink" id="footerLinkInicio">Início</a>
+                    <a href="#sobre" class="footerLink" id="footerLinkSobre">Sobre</a>
+                    <a href="#expertise" class="footerLink" id="footerLinkExpertise">Expertise</a>
+                    <a href="#palestras" class="footerLink" id="footerLinkPalestras">Palestras</a>
+                    <a href="#testemunhos" class="footerLink" id="footerLinkTestemunhos">Testemunhos</a>
+                    <a href="#contato" class="footerLink" id="footerLinkContato">Contato</a>
+                </div>
+            </div>
+            <div class="contatoFooter">
+                <h4 class="titleFooter">Contato</h4>
+                <p class="emailFooter">sulamitalima@gmail.com</p>
+                <p class="numFooter">(81) 99999-9999</p>
+                <p class="locFooter">Recife, PE - Brasil</p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="copyFooter">
+            <p>Desenvolvido por <a href="http://" target="_blank" rel="noopener noreferrer">Caio Laurindo</a>, para
+                Sulamita Lima © 2025</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
