@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
-
     font-weight: 400;
 }
 
@@ -31,7 +30,7 @@
 .navTitle {
     font-weight: 600;
     font-size: 30px;
-   color: #a1754f;
+    color: #a1754f;
 }
 
 .navLink {
@@ -40,15 +39,13 @@
     font-size: 17px;
     margin: 10px;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 #navLinkContato {
-    background-color:#a1754f;
+    background-color: #a1754f;
     color: #fffef9;
     border-radius: 5px;
     padding: 5px;
-
 }
 
 
@@ -101,21 +98,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .imageHero {
     width: 680px;
-    /* ajuste conforme a necessidade */
     height: auto;
     max-height: 90vh;
     object-fit: cover;
+    
+}
+.heroCTA {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
 }
 
-/* Onda no final */
+.ctaButton {
+  background: #a1754f;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  background: #5a3315;
+  transform: translateY(-2px);
+}
+
+
 .onda {
     width: 100%;
     height: 50px;
-    background: #a1754f;
+    background: #f8f5f2;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -124,7 +145,70 @@
 
 .aboutSection {
     min-height: 100vh;
-    background: #a1754f;
+    background: #f8f5f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px; 
+}
+
+.aboutContent {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 80px; 
+    align-items: center;
+}
+
+
+.infoAbout {
+    width: 45%;
+    margin-left: 40px;
+}
+
+.aboutTitle {
+    font-size: 56px; 
+    color: #7a4a1f;  
+    margin-bottom: 20px;
+    position: relative;
+    padding-top: 0;
+}
+
+.aboutTitle::after {
+    content: "";
+    display: block;
+    width: 80px;            
+    height: 4px;
+    background-color: #d9b88c; 
+    margin: 15px 0 0;
+    border-radius: 2px;
+}
+
+.aboutDescription {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #444; 
+    line-height: 1.8;
+}
+
+.aboutDescription strong {
+    color: #7a4a1f; 
+}
+
+
+.aboutIMG {
+    width: 480px;
+    border-radius: 20px; 
+    border: none;
+    margin-left: 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutIMG:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 .footer {
@@ -133,7 +217,7 @@
     color: #fff;
     padding: 40px 10%;
     position: relative;
-    
+
 }
 
 
@@ -144,15 +228,15 @@
     flex-wrap: wrap;
     margin-bottom: 30px;
     gap: 50px;
-    
-  
+
+
 }
 
 
 .infoFooter {
     width: 25%;
     min-width: 200px;
-    
+
 }
 
 .nomeFooter {
@@ -167,7 +251,7 @@
     line-height: 1.5;
     color: #ddd;
     font-family: 'Montserrat', sans-serif;
-   
+
 }
 
 .navegacaoFooter,
@@ -185,14 +269,15 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    
+
 }
 
 .emailFooter,
-.numFooter, .locFooter {
+.numFooter,
+.locFooter {
     margin-bottom: 5px;
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
 .footerLink {
@@ -201,7 +286,7 @@
     font-size: 0.9rem;
     transition: color 0.3s;
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
 .footerLink:hover {
@@ -217,7 +302,7 @@
     text-align: center;
     font-size: 0.85rem;
     color: #ccc;
-   
+
 }
 
 .copyFooter a {
@@ -229,4 +314,362 @@
 
 .copyFooter a:hover {
     color: #ddd;
+}
+
+
+
+.lecturesSection {
+  background: #f8f5f2;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.lectureContent {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+
+.lectureInfo {
+    flex: 1;
+
+}
+
+.lectureTitle {
+    font-size: 42px;
+    font-weight: bold;
+    color: #a1754f;
+    margin-bottom: 15px;
+}
+
+.lectureDescription {
+    font-size: 16px;
+    color: #5c4a3f;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.topicLecture {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modelTopic {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modelTitle {
+    font-size: 23px;
+    font-weight: bolder;
+    color: #a1754f;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#modelIcon {
+    margin-right: 18px;
+    color: #a1754f;
+}
+
+.modelDescription {
+    font-size: 14px;
+    color: #5c4a3f;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.lectureVideo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoLecture {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ========== RESPONSIVIDADE ========== */
+
+@media screen and (max-width: 1200px) {
+    .heroContent {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+
+    .infoHero {
+        margin-left: 50px;
+    }
+
+    .heroTitle {
+        font-size: 65px;
+    }
+
+    .imageHero {
+        width: 550px;
+    }
+
+    .footerContent {
+        gap: 30px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+    .heroContent {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .infoHero {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+
+    .heroTitle {
+        font-size: 55px;
+    }
+
+    .heroDescription {
+        font-size: 18px;
+        max-width: 600px;
+    }
+
+    .imageColumn {
+        width: 100%;
+    }
+
+    .imageHero {
+        width: 450px;
+        max-height: 60vh;
+    }
+
+    .footerContent {
+        justify-content: space-around;
+        gap: 40px;
+    }
+
+    .infoFooter {
+        width: 45%;
+        min-width: 250px;
+    }
+
+    .navegacaoFooter,
+    .contatoFooter {
+        width: 45%;
+        min-width: 200px;
+    }
+}
+
+/* Tablets pequenos */
+@media screen and (max-width: 768px) {
+    .heroSection {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .heroContent {
+        padding: 30px 15px;
+    }
+
+    .heroTitle {
+        font-size: 45px;
+    }
+
+    .heroDescription {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .imageHero {
+        width: 350px;
+        max-height: 50vh;
+    }
+
+    .onda {
+        height: 30px;
+    }
+
+    .footer {
+        padding: 30px 5%;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .infoFooter,
+    .navegacaoFooter,
+    .contatoFooter {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .nomeFooter {
+        font-size: 1.5rem;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 576px) {
+    .heroSection {
+        padding: 60px 0;
+    }
+
+    .heroContent {
+        padding: 20px 15px;
+    }
+
+    .heroTitle {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+
+    .heroDescription {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .imageHero {
+        width: 280px;
+        max-height: 40vh;
+    }
+
+    .onda {
+        height: 25px;
+    }
+
+    .footer {
+        padding: 25px 3%;
+    }
+
+    .footerContent {
+        gap: 25px;
+    }
+
+    .nomeFooter {
+        font-size: 1.3rem;
+    }
+
+    .descriptionFooter {
+        font-size: 0.85rem;
+    }
+
+    .titleFooter {
+        font-size: 1.1rem;
+    }
+
+    .footerLink {
+        font-size: 0.85rem;
+    }
+
+    .copyFooter {
+        font-size: 0.8rem;
+    }
+}
+
+/* Smartphones muito pequenos */
+@media screen and (max-width: 400px) {
+    .heroTitle {
+        font-size: 28px;
+    }
+
+    .heroDescription {
+        font-size: 13px;
+    }
+
+    .imageHero {
+        width: 240px;
+        max-height: 35vh;
+    }
+
+    .heroContent {
+        padding: 15px 10px;
+    }
+
+    .footer {
+        padding: 20px 2%;
+    }
+
+    .nomeFooter {
+        font-size: 1.2rem;
+    }
+
+    .descriptionFooter,
+    .footerLink {
+        font-size: 0.8rem;
+    }
+}
+
+/* Modo paisagem em smartphones */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .heroSection {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .heroContent {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .infoHero {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .heroTitle {
+        font-size: 30px;
+    }
+
+    .heroDescription {
+        font-size: 12px;
+    }
+
+    .imageColumn {
+        width: 50%;
+    }
+
+    .imageHero {
+        width: 200px;
+        max-height: 250px;
+    }
+}
+
+/* Ajustes para telas muito largas */
+@media screen and (min-width: 1400px) {
+    .heroContent {
+        max-width: 1400px;
+    }
+
+    .heroTitle {
+        font-size: 90px;
+    }
+
+    .heroDescription {
+        font-size: 22px;
+    }
+
+    .imageHero {
+        width: 700px;
+    }
 }
