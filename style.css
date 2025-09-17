@@ -106,30 +106,32 @@
     height: auto;
     max-height: 90vh;
     object-fit: cover;
-    
+
 }
+
 .heroCTA {
-  margin-top: 25px;
-  display: flex;
-  gap: 15px;
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
 }
 
 .ctaButton {
-  background: #a1754f;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  border: none;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+    background: #a1754f;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .ctaButton:hover {
-  background: #5a3315;
-  transform: translateY(-2px);
+    background: #5a3315;
+    transform: translateY(-2px);
 }
 
 
@@ -149,14 +151,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 20px; 
+    padding: 80px 20px;
 }
 
 .aboutContent {
     display: flex;
     max-width: 1300px;
     margin: 0 auto;
-    gap: 80px; 
+    gap: 80px;
     align-items: center;
 }
 
@@ -167,20 +169,22 @@
 }
 
 .aboutTitle {
-    font-size: 56px; 
-    color: #7a4a1f;  
+    font-size: 56px;
+    color: #7a4a1f;
     margin-bottom: 20px;
     position: relative;
     padding-top: 0;
 }
 
 .aboutTitle::after {
-    content: "";
-    display: block;
-    width: 80px;            
-    height: 4px;
-    background-color: #d9b88c; 
-    margin: 15px 0 0;
+    content: '';
+    position: absolute;
+    left: 20%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #d8b28a;
     border-radius: 2px;
 }
 
@@ -188,18 +192,18 @@
     margin-top: 20px;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-    color: #444; 
+    color: #444;
     line-height: 1.8;
 }
 
 .aboutDescription strong {
-    color: #7a4a1f; 
+    color: #7a4a1f;
 }
 
 
 .aboutIMG {
     width: 480px;
-    border-radius: 20px; 
+    border-radius: 20px;
     border: none;
     margin-left: 0;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -207,8 +211,291 @@
 }
 
 .aboutIMG:hover {
-    transform: scale(1.02); 
+    transform: scale(1.02);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.expertsSection {
+    min-height: 70vh;
+    background-color: #f8f5f2;
+
+}
+
+
+.container {
+    text-align: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: #332d27;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #d8b28a;
+    border-radius: 2px;
+}
+
+.section-header p {
+    font-size: 18px;
+    color: #6a6054;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #d8b28a;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #332d27;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #6a6054;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.card-topics h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b3e34;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+.card-topics ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-topics li {
+    font-size: 14px;
+    color: #6a6054;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.card-topics li::before {
+    content: "•";
+    color: #d8b28a;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+
+.lecturesSection {
+    background: #f8f5f2;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.lectureContent {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+
+.lectureInfo {
+    flex: 1;
+
+}
+
+.lectureTitle {
+    font-size: 42px;
+    font-weight: bold;
+    color: #a1754f;
+    margin-bottom: 15px;
+}
+
+.lectureDescription {
+    font-size: 16px;
+    color: #5c4a3f;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.topicLecture {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modelTopic {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modelTitle {
+    font-size: 23px;
+    font-weight: bolder;
+    color: #a1754f;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#modelIcon {
+    margin-right: 18px;
+    color: #a1754f;
+}
+
+.modelDescription {
+    font-size: 14px;
+    color: #5c4a3f;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.lectureVideo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoLecture {
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialsSection {
+    min-height: 50vh;
+    background: #f8f5f2;
+}
+
+.testemonialsContent {
+    display: flex;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 450px;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+
+    transition: all 0.3s;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+
+}
+
+.quote-icon {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 72px;
+    color: #d8b28a;
+    line-height: 0.5;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.quote-text {
+    font-style: italic;
+    color: #4b3e34;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rating {
+    color: #ffc107;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.rating .star {
+    display: inline-block;
+}
+
+.author-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4b3e34;
+    margin-bottom: 5px;
+}
+
+.author-title {
+    font-size: 14px;
+    color: #8c7e73;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .footer {
@@ -316,91 +603,6 @@
     color: #ddd;
 }
 
-
-
-.lecturesSection {
-  background: #f8f5f2;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-}
-
-
-.lectureContent {
-    max-width: 1300px;
-    display: flex;
-    align-items: center;
-    margin-left: 70px;
-}
-
-
-.lectureInfo {
-    flex: 1;
-
-}
-
-.lectureTitle {
-    font-size: 42px;
-    font-weight: bold;
-    color: #a1754f;
-    margin-bottom: 15px;
-}
-
-.lectureDescription {
-    font-size: 16px;
-    color: #5c4a3f;
-    line-height: 1.6;
-    margin-bottom: 25px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-.topicLecture {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.modelTopic {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.modelTitle {
-    font-size: 23px;
-    font-weight: bolder;
-    color: #a1754f;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-#modelIcon {
-    margin-right: 18px;
-    color: #a1754f;
-}
-
-.modelDescription {
-    font-size: 14px;
-    color: #5c4a3f;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-.lectureVideo {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.videoLecture {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
 
 /* ========== RESPONSIVIDADE ========== */
 
