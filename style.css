@@ -220,6 +220,7 @@
 
 .section-header {
     margin-bottom: 40px;
+    margin: 0 auto;
 }
 
 .section-header h2 {
@@ -227,7 +228,7 @@
     color: #332d27;
     margin-bottom: 10px;
     position: relative;
-    display: inline-block;
+    text-align: center;
 }
 
 .section-header h2::after {
@@ -249,16 +250,19 @@
     margin: 0 auto;
     line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-bottom: 15px;
 }
 
 .cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .card {
+    width: 600px;
+    height: 150px;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 30px;
@@ -270,12 +274,6 @@
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.card-icon {
-    font-size: 40px;
-    color: #d8b28a;
-    margin-bottom: 15px;
 }
 
 .card-title {
