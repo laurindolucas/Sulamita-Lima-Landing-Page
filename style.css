@@ -1,14 +1,20 @@
+/* ============================================ */
+/* RESET E CONFIGURAÇÕES GLOBAIS               */
+/* ============================================ */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-
 }
 
-.navBar {
+/* ============================================ */
+/* NAVEGAÇÃO                                   */
+/* ============================================ */
 
+.navBar {
     width: 100%;
     height: 70px;
     display: flex;
@@ -39,7 +45,6 @@
 }
 
 .navTitle {
-    font-weight: 600;
     font-weight: 700;
     font-size: 28px;
     color: #a1754f;
@@ -99,6 +104,10 @@
     box-shadow: 0 6px 20px rgba(161, 117, 79, 0.4);
     color: #fff;
 }
+
+/* ============================================ */
+/* SEÇÃO HERO                                  */
+/* ============================================ */
 
 .heroSection {
     position: relative;
@@ -204,6 +213,10 @@
     z-index: 0;
 }
 
+/* ============================================ */
+/* SEÇÃO SOBRE                                 */
+/* ============================================ */
+
 .aboutSection {
     min-height: 100vh;
     background: #f8f5f2;
@@ -271,6 +284,10 @@
     transform: scale(1.02);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
+
+/* ============================================ */
+/* SEÇÃO DE ESPECIALISTAS                      */
+/* ============================================ */
 
 .expertsSection {
     min-height: 70vh;
@@ -389,6 +406,10 @@
     top: -2px;
 }
 
+/* ============================================ */
+/* SEÇÃO DE PALESTRAS                          */
+/* ============================================ */
+
 .lecturesSection {
     background: #f8f5f2;
     padding: 60px 20px;
@@ -409,7 +430,6 @@
 
 .lectureInfo {
     flex: 1;
-
 }
 
 .lecturecontainer {
@@ -420,11 +440,10 @@
 .lectureTitle {
     font-size: 42px;
     font-weight: bold;
-    color: #a1754f;
+    color: #332d27;
     margin-bottom: 15px;
     text-align: center;
     position: relative;
-    color: #332d27;
 }
 
 .lectureTitle::after {
@@ -447,8 +466,7 @@
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     max-width: 870px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
 .topicLecture {
@@ -482,25 +500,32 @@
     color: #5c4a3f;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* ============================================ */
+/* MODAL                                       */
+/* ============================================ */
+
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
+
 .modal-content {
-  background: white;
-  margin: 10% auto;
-  padding: 20px;
-  border-radius: 15px;
-  width: 40%;
-  height: 500px;
-  position: relative;
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    height: 500px;
+    position: relative;
 }
+
 @keyframes modal-slide-up {
     from {
         transform: translateY(40px);
@@ -527,7 +552,6 @@
     transform: scale(1.1);
 }
 
-/* Tipografia */
 .modal-content h2 {
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
@@ -551,7 +575,6 @@
     font-family: "Inter", sans-serif;
 }
 
-/* Lista estilizada */
 .modal-content ul {
     list-style: none;
     padding: 0;
@@ -575,7 +598,6 @@
     top: 0;
 }
 
-/* Botão de ação dentro do modal */
 .modal-content .btn {
     display: inline-block;
     margin-top: 1.5rem;
@@ -595,7 +617,9 @@
     transform: translateY(-2px);
 }
 
-
+/* ============================================ */
+/* SEÇÃO DE DEPOIMENTOS                        */
+/* ============================================ */
 
 .testimonialsSection {
     min-height: 50vh;
@@ -647,7 +671,6 @@
     color: #ffc107;
     font-size: 24px;
     margin-bottom: 15px;
-
 }
 
 .rating .star {
@@ -680,7 +703,6 @@
 }
 
 .testimonials-image-section {
-
     height: 600px;
     background-color: #f8f5f2;
 }
@@ -699,6 +721,10 @@
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
     object-fit: cover;
 }
+
+/* ============================================ */
+/* SEÇÃO DE CONTATO                            */
+/* ============================================ */
 
 .talkSection {
     display: flex;
@@ -914,6 +940,10 @@ textarea {
     line-height: 1;
 }
 
+/* ============================================ */
+/* FOOTER                                      */
+/* ============================================ */
+
 .footer {
     width: 100%;
     background-color: #a1754f;
@@ -1012,7 +1042,7 @@ textarea {
 /* MEDIA QUERIES - RESPONSIVIDADE             */
 /* ============================================ */
 
-/* Tablets e Desktops pequenos (1024px - 1200px) */
+/* Desktop Grande (1024px - 1200px) */
 @media screen and (max-width: 1200px) {
     .navBarContent {
         width: 80%;
@@ -1051,7 +1081,7 @@ textarea {
     }
 }
 
-
+/* Tablet (768px - 1024px) */
 @media screen and (max-width: 1024px) {
     .navBarContent {
         width: 90%;
@@ -1178,7 +1208,7 @@ textarea {
     }
 }
 
-
+/* Mobile Grande (481px - 768px) */
 @media screen and (max-width: 768px) {
     .navBar {
         padding: 0 15px;
@@ -1272,6 +1302,8 @@ textarea {
 
     .card {
         padding: 20px;
+        width: 100%;
+        height: auto;
     }
 
     .lecturesSection {
@@ -1294,6 +1326,11 @@ textarea {
         max-width: 100%;
     }
 
+    #imagempalestra {
+        width: 100%;
+        max-width: 500px;
+    }
+
     .testimonialsSection {
         padding: 40px 15px;
     }
@@ -1301,6 +1338,7 @@ textarea {
     .testimonial-card {
         padding: 25px;
         max-width: 100%;
+        width: 100%;
     }
 
     .quote-icon {
@@ -1338,6 +1376,13 @@ textarea {
         gap: 0;
     }
 
+    .modal-content {
+        width: 80%;
+        height: auto;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
     .footer {
         padding: 30px 5%;
     }
@@ -1360,7 +1405,7 @@ textarea {
     }
 }
 
-
+/* Mobile Médio (321px - 480px) */
 @media screen and (max-width: 480px) {
     .navBar {
         height: auto;
@@ -1378,14 +1423,19 @@ textarea {
         margin-bottom: 10px;
     }
 
+    .navLinks {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .navLink {
         font-size: 13px;
         margin: 3px;
     }
 
     #navLinkContato {
-        background: none;
-        color: #302520;
+        padding: 8px 16px;
     }
 
     .heroTitle {
@@ -1397,7 +1447,7 @@ textarea {
     }
 
     .imageHero {
-        max-width: 600px;
+        max-width: 100%;
     }
 
     .aboutTitle {
@@ -1420,10 +1470,6 @@ textarea {
         padding: 15px;
     }
 
-    .card-icon {
-        font-size: 32px;
-    }
-
     .card-title {
         font-size: 18px;
     }
@@ -1442,6 +1488,15 @@ textarea {
 
     .quote-icon {
         font-size: 50px;
+    }
+
+    .rating2,
+    .rating3 {
+        margin-top: 80px;
+    }
+
+    .rating3 {
+        margin-top: 100px;
     }
 
     .title-talkSection {
@@ -1480,6 +1535,22 @@ textarea {
         height: 35px;
     }
 
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+        margin: 20% auto;
+    }
+
+    .modal-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-content .close {
+        font-size: 32px;
+        top: 10px;
+        right: 15px;
+    }
+
     .footer {
         padding: 25px 15px;
     }
@@ -1494,7 +1565,7 @@ textarea {
     }
 }
 
-
+/* Mobile Pequeno (até 320px) */
 @media screen and (max-width: 320px) {
     .heroTitle {
         font-size: 32px;
@@ -1521,15 +1592,19 @@ textarea {
     }
 
     .imageHero {
-        max-width: 280px;
+        max-width: 100%;
     }
 
     .aboutIMG {
-        max-width: 280px;
+        max-width: 100%;
+    }
+
+    .modal-content {
+        width: 95%;
     }
 }
 
-
+/* Dispositivos em Paisagem (Landscape) */
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .heroSection {
         min-height: auto;
@@ -1550,5 +1625,11 @@ textarea {
     .testimonialsSection {
         min-height: auto;
         padding: 40px 15px;
+    }
+
+    .modal-content {
+        margin: 5% auto;
+        max-height: 90vh;
+        overflow-y: auto;
     }
 }
