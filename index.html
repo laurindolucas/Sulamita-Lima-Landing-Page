@@ -94,36 +94,170 @@
                         tocado e convidam a audiência para um movimento interno real.
 
                     </p>
-                   <div class="cards-container">
-                    <div class="card">
-                        <h3 class="card-title">O Inimigo Invisível</h3>
-                        <p class="card-description">Identificar crenças limitantes e reconhecer autossabotagens
-                            emocionais e comportamentais que impedem o crescimento e a colaboração verdadeira nas
-                            equipes.</p>
-                    </div>
-                    <div class="card">
+                    <div class="lecturecontainer">
+                        <div class="cards-container">
+                            <!-- Card 1 -->
+                            <div class="card" onclick="openModal('modal1')">
+                                <h3 class="card-title">O Inimigo Invisível</h3>
+                                <p class="card-description">
+                                    Identificar crenças limitantes e reconhecer autossabotagens
+                                    emocionais e comportamentais que impedem o crescimento e a colaboração verdadeira
+                                    nas equipes.
+                                </p>
+                            </div>
+                            <div id="modal1" class="modal">
+                                <div class="modal-content">
+                                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                                    <h2>O Inimigo Invisível</h2>
+                                    <p>
+                                        Identificar crenças limitantes e reconhecer autossabotagens emocionais e
+                                        comportamentais
+                                        que impedem o crescimento e a colaboração verdadeira nas equipes.
+                                    </p>
 
-                        <h3 class="card-title">Fale Menos, conecte Mais</h3>
-                        <p class="card-description">Desenvolver uma comunicação mais consciente, empática e estratégica
-                            para melhorar o clima organizacional, o trabalho em equipe e o desempenho nas interações.
-                        </p>
-                    </div>
-                    <div class="card">
+                                    <h3>Benefícios para a empresa:</h3>
+                                    <ul>
+                                        <li> Aumenta a autoconsciência emocional dos colaboradores, prevenindo o
+                                            esgotamento e o adoecimento psicológico.</li>
+                                        <li>Cria um ambiente mais compassivo, onde o alto desempenho é equilibrado com
+                                            saúde mental e propósito individual.</li>
+                                    </ul>
 
-                        <h3 class="card-title">Você Não Está Motivado e Tá Tudo Bem!</h3>
-                        <p class="card-description">Desconstruir a ideia de motivação como um estado constante, trazendo
-                            ferramentas para cultivar consistência, foco e engajamento mesmo nos dias difíceis.</p>
+                                    <h3>Sinais que indicam a necessidade:</h3>
+                                    <ul>
+                                        <li> Profissionais talentosos demonstrando sinais de esgotamento, baixa
+                                            autoestima ou comparação constante.</li>
+                                        <li>Turnover ou queda de produtividade sem causas externas claras.</li>
+                                    </ul>
+
+                                    <p style="margin-top: 1.5rem;">
+                                        Cada palestra pode ser adaptada de acordo com os desafios e objetivos da sua
+                                        organização.
+                                    </p>
+
+                                    <button class="btn">Solicitar Palestra</button>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="card" onclick="openModal('modal2')">
+                                <h3 class="card-title">Fale Menos, Conecte Mais</h3>
+                                <p class="card-description">
+                                    Desenvolver uma comunicação mais consciente, empática e estratégica
+                                    para melhorar o clima organizacional e o desempenho nas interações.
+                                </p>
+                            </div>
+                            <div id="modal2" class="modal">
+                                <div class="modal-content">
+                                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                                    <h2>Fale Menos, Conecte Mais</h2>
+                                    <p> Desenvolver uma comunicação mais consciente, empática e estratégica
+                                        para melhorar o clima organizacional e o desempenho nas interações.
+                                    </p>
+
+                                    <h3>Benefícios para a empresa:</h3>
+                                    <ul>
+                                        <li>Melhora o clima organizacional com base na escuta ativa.</li>
+                                        <li>Reduz conflitos causados por ruídos de comunicação.</li>
+                                    </ul>
+
+                                    <h3>Sinais que indicam a necessidade:</h3>
+                                    <ul>
+                                        <li>Feedbacks que geram resistência, ruído ou defensividade.</li>
+                                        <li>Líderes que falam muito, mas inspiram pouco engajamento.</li>
+                                    </ul>
+
+                                    <p style="margin-top: 1.5rem;">
+                                        Cada palestra pode ser adaptada de acordo com os desafios e objetivos da sua
+                                        organização.
+                                    </p>
+
+                                    <button class="btn">Solicitar Palestra</button>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="card" onclick="openModal('modal3')">
+                                <h3 class="card-title">Você Não Está Motivado e Tá Tudo Bem!</h3>
+                                <p class="card-description">
+                                    Desconstruir a ideia de motivação como um estado constante, trazendo
+                                    ferramentas para cultivar consistência e foco mesmo nos dias difíceis.
+                                </p>
+                            </div>
+                            <div id="modal3" class="modal">
+                                <div class="modal-content">
+                                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                                    <h2>Você Não Está Motivado e Tá Tudo Bem!</h2>
+                                    <p>
+                                         Desconstruir a ideia de motivação como um estado constante, trazendo
+                                    ferramentas para cultivar consistência e foco mesmo nos dias difíceis.
+                                </p>
+
+                                    <h3>Benefícios para a empresa:</h3>
+                                    <ul>
+                                        <li>Redução do absenteísmo e do presenteísmo emocional.</li>
+                                        <li>Melhora na consistência e responsabilidade individual.</li>
+                                    </ul>
+
+                                    <h3>Sinais que indicam a necessidade:</h3>
+                                    <ul>
+                                        <li>Equipes com alta rotatividade por “falta de propósito”.</li>
+                                        <li>Procrastinação ou baixa entrega recorrente, mesmo com talentos promissores.</li>
+                                    </ul>
+
+                                    <p style="margin-top: 1.5rem;">
+                                        Cada palestra pode ser adaptada de acordo com os desafios e objetivos da sua
+                                        organização.
+                                    </p>
+
+                                    <button class="btn">Solicitar Palestra</button>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="card" onclick="openModal('modal4')">
+                                <h3 class="card-title">Você Não É Todo Mundo!</h3>
+                                <p class="card-description">
+                                    Estimular colaboradores a reconhecerem e valorizarem sua singularidade,
+                                    fortalecendo a inovação, o engajamento e a autenticidade no ambiente de trabalho.
+                                </p>
+                            </div>
+                            <div id="modal4" class="modal">
+                                <div class="modal-content">
+                                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                                    <h2>Você Não É Todo Mundo!</h2>
+                                    <p>
+                                       Estimular colaboradores a reconhecerem e valorizarem sua singularidade,
+                                    fortalecendo a inovação, o engajamento e a autenticidade no ambiente de trabalho.
+                                </p>
+
+                                    <h3>Benefícios para a empresa:</h3>
+                                    <ul>
+                                        <li>Colaboradores confiantes para propor novas ideias.</li>
+                                        <li> Valorização do capital humano. Cada pessoa reconhecida como única.</li>
+                                    </ul>
+
+                                    <h3>Sinais que indicam a necessidade:</h3>
+                                    <ul>
+                                        <li>Clima de comparações internas ou competição tóxica.</li>
+                                        <li>Alta rotatividade ou sensação de “mais do mesmo”.</li>
+                                    </ul>
+
+                                    <p style="margin-top: 1.5rem;">
+                                        Cada palestra pode ser adaptada de acordo com os desafios e objetivos da sua
+                                        organização.
+                                    </p>
+
+                                    <button class="btn">Solicitar Palestra</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="palestraImg">
+                            <img src="/assets/fotoPALESTRA.jpg" alt="" id="imagempalestra">
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3 class="card-title">Você Não É Todo Mundo!</h3>
-                        <p class="card-description">Estimular colaboradores a reconhecerem e valorizarem sua
-                            singularidade, fortalecendo a inovação, o engajamento e a autenticidade no ambiente de
-                            trabalho.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="lectureVideo">
-                    <video src="/assets/2025-04-16 23-34-50.mkv" class="videoLecture" controls preload="none"></video>
+
+
                 </div>
             </div>
         </section>
@@ -200,6 +334,11 @@
 
             </div>
 
+        </section>
+        <section class="testimonials-image-section">
+            <div class="image-testimonials">
+                <img src="/assets/separatorImg.jpg" alt="" class="testimonials-image">
+            </div>
         </section>
 
 
@@ -307,7 +446,7 @@
     <footer class="footer">
         <div class="footerContent">
             <div class="infoFooter">
-                <h3 class="nomeFooter">Sulamita Lima</h3>
+                <h3 class="nomeFooter">Sulamitta Lima</h3>
                 <p class="descriptionFooter">Transformando organizações através do desenvolvimento de lideranças
                     femininas autênticas e impactantes.</p>
             </div>
