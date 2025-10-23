@@ -7,30 +7,48 @@
 }
 
 .navBar {
+
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f8f6f3;
+    background-color: rgba(248, 246, 243, 0.98);
+    backdrop-filter: blur(10px);
     padding: 0 20px;
     position: fixed;
-    border-bottom: 1px solid rgb(235, 235, 235);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    top: 0;
+    border-bottom: 1px solid rgba(161, 117, 79, 0.1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
     z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.navBar.scrolled {
+    height: 60px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .navBarContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 100%;
+    max-width: 1400px;
 }
 
 .navTitle {
     font-weight: 600;
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 28px;
     color: #a1754f;
+    letter-spacing: -0.5px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 35px;
+    align-items: center;
 }
 
 .navLink {
@@ -38,14 +56,47 @@
     color: #302520;
     font-size: 17px;
     margin: 10px;
+    position: relative;
+    transition: color 0.3s ease;
     font-family: 'Montserrat', sans-serif;
 }
 
+.navLink::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #a1754f;
+    transition: width 0.3s ease;
+}
+
+.navLink:hover {
+    color: #a1754f;
+}
+
+.navLink:hover::after {
+    width: 100%;
+}
+
 #navLinkContato {
-    background-color: #a1754f;
-    color: #fffef9;
-    border-radius: 5px;
-    padding: 5px;
+    background: linear-gradient(135deg, #a1754f, #8a5d3d);
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 25px;
+    box-shadow: 0 4px 15px rgba(161, 117, 79, 0.3);
+    transition: all 0.3s ease;
+}
+
+#navLinkContato::after {
+    display: none;
+}
+
+#navLinkContato:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(161, 117, 79, 0.4);
+    color: #fff;
 }
 
 .heroSection {
@@ -412,7 +463,7 @@
 .testemonialsContent {
     display: flex;
     gap: 40px;
-    max-width: 1300px;
+    max-width: 1220px;
     margin: 0 auto;
 }
 
@@ -420,7 +471,7 @@
     background-color: #ffffff;
     border-radius: 15px;
     padding: 40px;
-    max-width: 450px;
+    width: 400px;
     text-align: left;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
     transition: all 0.3s;
@@ -446,7 +497,7 @@
     font-size: 16px;
     line-height: 1.6;
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -454,10 +505,23 @@
     color: #ffc107;
     font-size: 24px;
     margin-bottom: 15px;
+
 }
 
 .rating .star {
     display: inline-block;
+}
+
+.rating2,
+.rating3 {
+    margin-top: 110px;
+    color: #ffc107;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.rating3 {
+    margin-top: 130px;
 }
 
 .author-name {
@@ -790,35 +854,35 @@ textarea {
     .navBarContent {
         width: 80%;
     }
-    
+
     .heroContent {
         padding: 0 30px;
     }
-    
+
     .infoHero {
         margin-left: 50px;
     }
-    
+
     .heroTitle {
         font-size: 70px;
     }
-    
+
     .imageHero {
         width: 600px;
     }
-    
+
     .aboutContent {
         gap: 50px;
     }
-    
+
     .infoAbout {
         margin-left: 20px;
     }
-    
+
     .aboutIMG {
         width: 420px;
     }
-    
+
     .lectureContent {
         margin-left: 30px;
     }
@@ -829,123 +893,123 @@ textarea {
     .navBarContent {
         width: 90%;
     }
-    
+
     .navTitle {
         font-size: 26px;
     }
-    
+
     .navLink {
         font-size: 15px;
         margin: 8px;
     }
-    
+
     .heroContent {
         flex-direction: column;
         padding: 100px 20px 50px;
         text-align: center;
     }
-    
+
     .infoHero {
         width: 100%;
         margin-left: 0;
         align-items: center;
         margin-bottom: 40px;
     }
-    
+
     .heroTitle {
         font-size: 60px;
     }
-    
+
     .heroDescription {
         font-size: 18px;
         text-align: center;
     }
-    
+
     .imageColumn {
         width: 100%;
     }
-    
+
     .imageHero {
         width: 500px;
         max-width: 100%;
     }
-    
+
     .aboutContent {
         flex-direction: column;
         gap: 40px;
         text-align: center;
     }
-    
+
     .infoAbout {
         width: 100%;
         margin-left: 0;
     }
-    
+
     .aboutTitle {
         font-size: 48px;
     }
-    
+
     .aboutTitle::after {
         left: 50%;
     }
-    
+
     .aboutIMG {
         width: 400px;
         max-width: 100%;
     }
-    
+
     .section-header h2 {
         font-size: 32px;
     }
-    
+
     .cards-container {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
     }
-    
+
     .lectureContent {
         flex-direction: column;
         margin-left: 0;
         gap: 40px;
     }
-    
+
     .lectureTitle {
         font-size: 36px;
         text-align: center;
     }
-    
+
     .lectureVideo {
         order: -1;
     }
-    
+
     .videoLecture {
         max-width: 600px;
     }
-    
+
     .testemonialsContent {
         flex-direction: column;
         align-items: center;
         gap: 30px;
         padding: 0 20px;
     }
-    
+
     .testimonial-card {
         max-width: 500px;
     }
-    
+
     .talkSection {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .title-talkSection {
         font-size: 32px;
     }
-    
+
     .footerContent {
         gap: 30px;
     }
-    
+
     .infoFooter {
         width: 45%;
     }
@@ -956,178 +1020,178 @@ textarea {
     .navBar {
         padding: 0 15px;
     }
-    
+
     .navBarContent {
         width: 100%;
         flex-wrap: wrap;
         gap: 10px;
     }
-    
+
     .navTitle {
         font-size: 24px;
     }
-    
+
     .navLink {
         font-size: 14px;
         margin: 5px;
     }
-    
+
     #navLinkContato {
         padding: 8px 12px;
     }
-    
+
     .heroContent {
         padding: 180px 15px 30px;
     }
-    
+
     .heroTitle {
         font-size: 48px;
         line-height: 1.1;
     }
-    
+
     .heroDescription {
         font-size: 16px;
         margin-top: 15px;
     }
-    
+
     .imageHero {
         width: 100%;
-           max-width: 600px;
+        max-width: 600px;
     }
-    
+
     .heroCTA {
         flex-direction: column;
         width: 100%;
         gap: 10px;
     }
-    
+
     .ctaButton {
         width: 100%;
         padding: 16px 20px;
     }
-    
+
     .aboutSection {
         padding: 60px 15px;
     }
-    
+
     .aboutTitle {
         font-size: 42px;
     }
-    
+
     .aboutDescription {
         font-size: 16px;
         line-height: 1.6;
     }
-    
+
     .aboutIMG {
         width: 100%;
         max-width: 350px;
     }
-    
+
     .expertsSection {
         padding: 40px 15px;
     }
-    
+
     .section-header h2 {
         font-size: 28px;
     }
-    
+
     .section-header p {
         font-size: 16px;
         padding: 0 10px;
     }
-    
+
     .cards-container {
         grid-template-columns: 1fr;
         gap: 15px;
         margin-top: 20px;
     }
-    
+
     .card {
         padding: 20px;
     }
-    
+
     .lecturesSection {
         padding: 40px 15px;
     }
-    
+
     .lectureTitle {
         font-size: 32px;
     }
-    
+
     .lectureDescription {
         font-size: 15px;
     }
-    
+
     .modelTitle {
         font-size: 20px;
     }
-    
+
     .videoLecture {
         max-width: 100%;
     }
-    
+
     .testimonialsSection {
         padding: 40px 15px;
     }
-    
+
     .testimonial-card {
         padding: 25px;
         max-width: 100%;
     }
-    
+
     .quote-icon {
         font-size: 60px;
     }
-    
+
     .quote-text {
         font-size: 15px;
     }
-    
+
     .talkSection {
         padding: 15px;
     }
-    
+
     .content-talkSection,
     .contact-section {
         padding: 20px;
         max-width: 100%;
     }
-    
+
     .title-talkSection {
         font-size: 28px;
     }
-    
+
     .description-talkSection {
         font-size: 16px;
     }
-    
+
     .formTitle {
         font-size: 26px;
     }
-    
+
     .formInitial {
         flex-direction: column;
         gap: 0;
     }
-    
+
     .footer {
         padding: 30px 5%;
     }
-    
+
     .footerContent {
         flex-direction: column;
         gap: 25px;
         text-align: center;
     }
-    
+
     .infoFooter,
     .navegacaoFooter,
     .contatoFooter {
         width: 100%;
         min-width: auto;
     }
-    
+
     .nomeFooter {
         font-size: 1.5rem;
     }
@@ -1140,125 +1204,127 @@ textarea {
         min-height: 60px;
         padding: 10px;
     }
-    
+
     .navBarContent {
         justify-content: center;
         text-align: center;
     }
-    
+
     .navTitle {
         font-size: 22px;
         margin-bottom: 10px;
     }
-    
+
     .navLink {
         font-size: 13px;
         margin: 3px;
     }
-    #navLinkContato{
+
+    #navLinkContato {
         background: none;
         color: #302520;
     }
+
     .heroTitle {
         font-size: 36px;
     }
-    
+
     .heroDescription {
         font-size: 15px;
     }
-    
+
     .imageHero {
         max-width: 600px;
     }
-    
+
     .aboutTitle {
         font-size: 36px;
     }
-    
+
     .aboutDescription {
         font-size: 15px;
     }
-    
+
     .section-header h2 {
         font-size: 24px;
     }
-    
+
     .section-header p {
         font-size: 15px;
     }
-    
+
     .card {
         padding: 15px;
     }
-    
+
     .card-icon {
         font-size: 32px;
     }
-    
+
     .card-title {
         font-size: 18px;
     }
-    
+
     .lectureTitle {
         font-size: 28px;
     }
-    
+
     .modelTitle {
         font-size: 18px;
     }
-    
+
     .testimonial-card {
         padding: 20px;
     }
-    
+
     .quote-icon {
         font-size: 50px;
     }
-    
+
     .title-talkSection {
         font-size: 24px;
     }
-    
+
     .description-talkSection {
         font-size: 15px;
     }
-    
+
     .formTitle {
         font-size: 22px;
     }
-    
+
     .form-input,
     textarea {
         padding: 12px;
-        font-size: 16px; 
+        font-size: 16px;
     }
-    
+
     .formButton {
         padding: 16px 20px;
         font-size: 16px;
     }
-    
+
     .contact-section {
         padding: 15px;
     }
-    
+
     .contact-item {
         gap: 10px;
     }
-    
+
     .icon-box {
         width: 35px;
         height: 35px;
     }
-    
+
     .footer {
         padding: 25px 15px;
     }
-    
+
     .nomeFooter {
         font-size: 1.3rem;
     }
-    
+
     .descriptionFooter,
     .footerLink {
         font-size: 0.85rem;
@@ -1270,31 +1336,31 @@ textarea {
     .heroTitle {
         font-size: 32px;
     }
-    
+
     .aboutTitle {
         font-size: 32px;
     }
-    
+
     .section-header h2 {
         font-size: 22px;
     }
-    
+
     .lectureTitle {
         font-size: 24px;
     }
-    
+
     .title-talkSection {
         font-size: 22px;
     }
-    
+
     .formTitle {
         font-size: 20px;
     }
-    
+
     .imageHero {
         max-width: 280px;
     }
-    
+
     .aboutIMG {
         max-width: 280px;
     }
@@ -1306,15 +1372,15 @@ textarea {
         min-height: auto;
         padding: 80px 0 40px;
     }
-    
+
     .heroTitle {
         font-size: 40px;
     }
-    
+
     .imageHero {
         max-height: 300px;
     }
-    
+
     .aboutSection,
     .expertsSection,
     .lecturesSection,
