@@ -1403,6 +1403,28 @@ textarea {
     .nomeFooter {
         font-size: 1.5rem;
     }
+       .lecturecontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .palestraImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #imagempalestra {
+        width: 100%;
+        max-width: 380px;
+    }
 }
 
 /* Mobile Médio (321px - 480px) */
